@@ -7,7 +7,7 @@
 在项目的 **`Podfile`** 中添加下列内容
 
 ```
-pod 'MSMobAdSDK', '~>0.0.2'
+pod 'MSMobAdSDK', '~>0.8.0'
 ```
 
 ### 2 手工集成
