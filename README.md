@@ -12,5 +12,5 @@ pod 'MSMobAdSDK', '~>0.0.2'
 
 ### 2 手工集成
 
-请参考DEMO代码 [adxdata/sdk-android-demo](https://github.com/adxdata/sdk-android-demo).
+请参考DEMO代码 [adxdata/sdk-ios-demo](https://github.com/adxdata/sdk-ios-demo).
 
