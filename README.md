@@ -4,7 +4,7 @@
 
 ### 1 使用CocoaPods集成
 
-在项目的**`Podfile`**中添加下列内容
+在项目的 **`Podfile`** 中添加下列内容
 
 ```
 pod 'MSMobAdSDK', '~>0.0.2'
