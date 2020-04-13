@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'MSMobAdSDK'
-  s.version     = '0.8.34'
+  s.version     = '0.8.54'
   s.summary     = 'Mobile AD SDK For iOS.'
   s.homepage    = 'https://github.com/adxdata/MSMobAdSDK-iOS'
   s.license     = 'MIT'
@@ -12,9 +12,6 @@ Pod::Spec.new do |s|
   s.libraries   = 'c++', 'resolv.9', 'xml2', 'z'
 
   s.default_subspecs  = 'union'
-
-  s.dependency  'Masonry', '1.1.0'
-  s.dependency  'Reachability', '3.2'
 
   s.subspec 'union' do |sp|
     sp.vendored_frameworks  = 'MSMobAdSDK/union/MSAdSDK.framework', 'BaiduMobAdSDK/BaiduMobAdSDK.framework'
