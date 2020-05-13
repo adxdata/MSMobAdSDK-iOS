@@ -2,12 +2,11 @@ Pod::Spec.new do |s|
   s.name        = 'MSMobAdSDK'
   s.version     = '0.8.63'
   s.summary     = 'Mobile AD SDK For iOS.'
-  #s.homepage    = 'https://github.com/adxdata/MSMobAdSDK-iOS'
-  s.homepage    = 'https://git.adxdata.com/meishu/MSMobAdSDK-iOS'
+  s.homepage    = 'https://github.com/adxdata/MSMobAdSDK-iOS'
   s.license     = 'MIT'
   s.author      = { 'Lei Dai' => 'dailei@adxdata.com' }
   s.platform    = :ios, '9.0'
-  s.source      = { :git => 'https://github.com/adxdata/MSMobAdSDK-iOS.git', :tag => "#{s.version}" }
+  s.source      = { :git => 'https://git.adxdata.com/meishu/MSMobAdSDK-iOS.git', :tag => "#{s.version}" }
 
   s.frameworks  = 'AdSupport', 'AVFoundation', 'CoreLocation', 'CoreMedia', 'CoreMotion', 'CoreTelephony', 'MessageUI', 'QuartzCore', 'SafariServices', 'Security', 'StoreKit', 'SystemConfiguration', 'WebKit'
   s.libraries   = 'c++', 'resolv.9', 'xml2', 'z'
