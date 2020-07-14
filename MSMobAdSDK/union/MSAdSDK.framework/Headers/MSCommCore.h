@@ -60,6 +60,10 @@
 
 + (NSString *)getIOSUA;
 
+/** 第一次应用启动时 提前配置UA */
+
++(void) configIOSUA;
+
 + (void)setTouchBegin:(CGPoint)touch;
 
 + (void)setTouchEnd:(CGPoint)touch;

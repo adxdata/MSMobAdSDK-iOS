@@ -77,21 +77,16 @@ static BOOL isShowSplash;
  */
 @property (nonatomic, weak) id<MSSplashAdDelegate> delegate;
 
-
-/**
- *  拉取广告超时时间，默认为3秒
- *  详解：拉取广告超时时间，开发者调用loadAd方法以后会立即展示backgroundImage，然后在该超时时间内，如果广告拉
- *  取成功，则立马展示开屏广告，否则放弃此次广告展示机会。
- */
- @property (nonatomic, assign) NSInteger fetchDelay;
-
 /**
  * 自定义底部视图
  */
- @property (nonatomic, strong) UIView *bottomView;
+@property (nonatomic, strong) UIView *bottomView;
 
  /** 广告是否正在显示 */
- @property (nonatomic, assign) BOOL adShow;
+@property (nonatomic, assign) BOOL adShow;
+
+ /** 自定义跳过控件 */
+@property (nonatomic, strong) UIView *skipView;
 
 /**
  *  广告发起请求并展示在Window中
@@ -101,6 +96,16 @@ static BOOL isShowSplash;
  *  @param pid 广告id
  */
 - (void)loadAdAndShowInWindow:(UIWindow *)window pid:(NSString *)pid;
+
+/**
+ * 只加载不显示广告
+ */
+- (void)loadAd:(UIWindow *)window pid:pid;
+
+/**
+ * 显示广告
+ */
+- (void)showAd;
 
 @end
 
