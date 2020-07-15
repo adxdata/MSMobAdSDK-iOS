@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'MSMobAdSDK'
-  s.version     = '0.8.72.1'
+  s.version     = '0.8.72.2'
   s.summary     = 'Mobile AD SDK For iOS.'
   s.homepage    = 'https://github.com/adxdata/MSMobAdSDK-iOS'
   s.license     = 'MIT'
