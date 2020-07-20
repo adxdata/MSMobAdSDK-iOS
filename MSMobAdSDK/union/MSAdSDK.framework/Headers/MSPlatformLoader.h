@@ -57,6 +57,11 @@
 - (void)adLoadError:(NSError *)error;
 
 /**
+ * 各平台广告成功展示时调用
+ */
+- (void)platformAdPresent;
+
+/**
  * 各平台广告曝光成功时调用
  */
 - (void)platformAdShow;

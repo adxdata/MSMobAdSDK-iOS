@@ -26,6 +26,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  开屏广告成功展示
  */
+- (void)msSplashPresent:(MSSplashAd *)splashAd;
+
+/**
+ *  开屏广告曝光
+ */
 - (void)splashAdSuccessPresentScreen:(MSSplashAd *)splashAd DEPRECATED_MSG_ATTRIBUTE("use msSplashShow: instead");
 - (void)msSplashShow:(MSSplashAd *)splashAd;
 
