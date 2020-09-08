@@ -7,14 +7,16 @@
 #import <UIKit/UIKit.h>
 #import "BaiduMobAdCommonConfig.h"
 #import "BaiduMobAdNativeVideoBaseView.h"
+#import "BaiduMobAdNativeVideoViewDelegate.h"
 
 @class BaiduMobAdNativeAdObject;
 @interface BaiduMobAdNativeVideoView : BaiduMobAdNativeVideoBaseView
 @property BOOL supportControllerView;
 @property BOOL supportActImage;
 
-@property (nonatomic, strong)   UIButton *btnLP;//点击查看详情按钮
-@property (nonatomic, strong)   UIButton *btnReplay;//重播按钮
+@property (nonatomic, strong) UIButton *btnLP; // 点击查看详情按钮
+@property (nonatomic, strong) UIButton *btnReplay; // 重播按钮
+@property (nonatomic, weak) id <BaiduMobAdNativeVideoViewDelegate> videoDelegate; //视频事件delegate
 
 /**
  初始化方法

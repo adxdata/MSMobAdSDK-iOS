@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'MSMobAdSDK'
-  s.version     = '0.8.75'
+  s.version     = '1.0.0.0'
   s.summary     = 'Mobile AD SDK For iOS.'
   s.homepage    = 'https://github.com/adxdata/MSMobAdSDK-iOS'
   s.license     = 'MIT'
@@ -8,29 +8,33 @@ Pod::Spec.new do |s|
   s.platform    = :ios, '9.0'
   s.source      = { :git => 'https://git.adxdata.com/meishu/MSMobAdSDK-iOS.git', :tag => "#{s.version}" }
 
-  s.frameworks  = 'AdSupport', 'AVFoundation', 'CoreLocation', 'CoreMedia', 'CoreMotion', 'CoreTelephony', 'MessageUI', 'QuartzCore', 'SafariServices', 'Security', 'StoreKit', 'SystemConfiguration', 'WebKit'
-  s.libraries   = 'c++', 'resolv.9', 'xml2', 'z'
+  s.default_subspecs  = 'MS'
 
-  s.default_subspecs  = 'union'
+  s.subspec 'MS' do |sp|
+    sp.frameworks   = 'AdSupport', 'AVFoundation', 'CoreLocation', 'CoreTelephony', 'Foundation', 'StoreKit', 'UIKit', 'WebKit'
 
-  s.subspec 'union' do |sp|
-    sp.vendored_frameworks  = 'MSMobAdSDK/union/MSAdSDK.framework', 'BaiduMobAdSDK/BaiduMobAdSDK.framework'
-    sp.resources            = 'MSMobAdSDK/union/MSBundle.bundle', 'BaiduMobAdSDK/BaiduMobAdSDK.bundle'
-
-    sp.dependency 'AFNetworking'
-    sp.dependency 'Bytedance-UnionAD', '~>3.1.0.0'
-    sp.dependency 'GDTMobSDK', '4.11.9'
+    sp.vendored_frameworks  = 'MSMobAdSDK/MSAdSDK.framework'
+    sp.resources            = 'MSMobAdSDK/MSAdSDK.bundle'
   end
 
-  s.subspec 'meishu' do |sp|
-    sp.vendored_frameworks  = 'MSMobAdSDK/meishu/MSAdSDK.framework'
-    sp.resources            = 'MSMobAdSDK/meishu/MSBundle.bundle'
+  s.subspec 'BD' do |sp|
+    sp.frameworks   = 'AdSupport', 'AVFoundation', 'CoreLocation', 'CoreMedia', 'CoreMotion', 'CoreTelephony', 'MessageUI', 'SafariServices', 'StoreKit', 'SystemConfiguration'
+    sp.libraries    = 'c++'
+
+    sp.vendored_frameworks  = 'BaiduMobAdSDK/BaiduMobAdSDK.framework'
+    sp.resources            = 'BaiduMobAdSDK/baidumobadsdk.bundle'
+
+    sp.dependency 'MSMobAdSDK'
   end
 
-  s.subspec 'enai' do |sp|
-    sp.vendored_frameworks  = 'MSMobAdSDK/enai/MSAdSDK.framework', 'BaiduMobAdSDK/BaiduMobAdSDK.framework'
-    sp.resources            = 'MSMobAdSDK/enai/MSBundle.bundle', 'BaiduMobAdSDK/BaiduMobAdSDK.bundle'
-
-    sp.dependency 'AFNetworking'
+  s.subspec 'CSJ' do |sp|
+    sp.dependency 'MSMobAdSDK'
+    sp.dependency 'Bytedance-UnionAD', '~> 3.2.0'
   end
+
+  s.subspec 'GDT' do |sp|
+    sp.dependency 'MSMobAdSDK'
+    sp.dependency 'GDTMobSDK', '4.11.10'
+  end
+
 end

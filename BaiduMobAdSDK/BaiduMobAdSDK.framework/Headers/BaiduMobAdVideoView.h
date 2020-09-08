@@ -21,6 +21,20 @@
 - (void)fullscreenVideoAdDidStartPlaying:(BaiduMobAdVideoView *)videoView;
 
 /**
+ 视频暂停播放
+ 
+ @param videoView self
+ */
+- (void)fullscreenVideoAdDidPause:(BaiduMobAdVideoView *)videoView;
+
+/**
+ 视频重播
+ 
+ @param videoView self
+ */
+- (void)fullscreenVideoAdDidReplay:(BaiduMobAdVideoView *)videoView;
+
+/**
  视频播放完成
 
  @param videoView self
