@@ -13,22 +13,22 @@
 /**
  广告平台
  */
-typedef NS_ENUM(NSInteger, MSShowType) {
-    MSShowTypeMS  = 0, // 展示美数
-    MSShowTypeGDT = 1, // 展示广点通
-    MSShowTypeBU  = 2, // 展示穿山甲
-    MSShowTypeBD  = 3, // 展示百度
-    MSShowTypeDN  = 4, // 展示多牛
+typedef NS_ENUM(NSInteger, MSPlatform) {
+    MSPlatformMS  = 0, // 展示美数
+    MSPlatformGDT = 1, // 展示广点通
+    MSPlatformBU  = 2, // 展示穿山甲
+    MSPlatformBD  = 3, // 展示百度
+    MSPlatformDN  = 4, // 展示多牛
 };
 
 /**
  监测上报类型
  */
 typedef NS_ENUM(NSInteger, MSReportType) {
-    MSReportLB    = 0, // 加载广告前
-    MSReportLS    = 1, // 加载广告成功
-    MSReportShow  = 2, // 曝光
-    MSReportClick = 3, // 点击
+    MSReportRequest     = 0, // 加载广告前
+    MSReportResponse    = 1, // 加载广告成功
+    MSReportShow        = 2, // 曝光
+    MSReportClick       = 3, // 点击
 };
 
 /**

@@ -43,7 +43,7 @@
 /**
 *  平台Error
 */
--(void) msSplashPlatformError:(MSShowType)platform
+-(void) msSplashPlatformError:(MSPlatform)platform
                      splashAd:(MSSplashAd *)splashAd
                         error:(NSError*)error;
 

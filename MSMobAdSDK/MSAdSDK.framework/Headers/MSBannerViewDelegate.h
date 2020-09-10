@@ -32,7 +32,7 @@
  *  请求平台广告条数据失败后调用
  *  详解:当接收服务器返回的广告数据失败后调用该函数
  */
-- (void)msBannerPlatformError:(MSShowType)platform
+- (void)msBannerPlatformError:(MSPlatform)platform
                      bannerAd:(MSBannerView *)msBannerAd
                         error:(NSError *)error;
 

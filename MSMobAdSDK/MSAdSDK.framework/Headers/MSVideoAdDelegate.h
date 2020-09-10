@@ -31,7 +31,7 @@
 /**
 *  视频广告平台展示失败
 */
-- (void)msVideoPlatformError:(MSShowType)platform ad: (MSVideoAd *)videoAd error:(NSError *)error;
+- (void)msVideoPlatformError:(MSPlatform)platform ad: (MSVideoAd *)videoAd error:(NSError *)error;
 
 /**
  *  视频广告点击回调

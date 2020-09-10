@@ -71,7 +71,7 @@
  @param error 具体错误信息
  */
 
-- (void)msRewardVideoPlatformError:(MSRewardVideoAd *)msRewardVideoAd  platform:(MSShowType)platform error:(NSError *)error;
+- (void)msRewardVideoPlatformError:(MSRewardVideoAd *)msRewardVideoAd  platform:(MSPlatform)platform error:(NSError *)error;
 
 /**
  视频广告播放达到激励条件回调

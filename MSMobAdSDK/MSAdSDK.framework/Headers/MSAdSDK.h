@@ -26,7 +26,7 @@
 + (NSInteger)  getVersionCode;
 
 //获取平台版本号
-+ (NSString*)  platformVersion:(MSShowType) platform;
++ (NSString*)  platformVersion:(MSPlatform) platform;
 
 //设置支持的通信协议
 + (void)setSecure:(MSSecure) secure;
