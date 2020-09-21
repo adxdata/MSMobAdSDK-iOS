@@ -27,6 +27,10 @@ NS_ASSUME_NONNULL_BEGIN
 //视频当前播放时长
 @property (nonatomic, assign) NSTimeInterval currentTime;
 
+/**
+ 获取广告平台
+ */
+@property (nonatomic, assign, readonly) MSPlatform platform;
 
 -(instancetype)initWithFrame:(CGRect)frame presentVc:(UIViewController*)presentVc;
 
@@ -42,6 +46,11 @@ NS_ASSUME_NONNULL_BEGIN
  * 暂停视频
  */
 - (void)pauseVideo;
+
+/**
+ * 调整视频大小
+ */
+-(void) reSize:(CGRect)frame;
 
 @end
 

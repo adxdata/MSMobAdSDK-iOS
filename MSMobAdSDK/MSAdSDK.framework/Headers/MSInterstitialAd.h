@@ -17,7 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
  *  委托对象
  */
 @property (nonatomic, weak) id<MSInterstitialDelegate> delegate;
-
+/**
+ 获取广告平台
+ */
+@property (nonatomic, assign, readonly) MSPlatform platform;
 /**
  *  构造方法
  *  详解：controller - 当前界面

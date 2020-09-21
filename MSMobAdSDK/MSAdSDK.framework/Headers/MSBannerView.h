@@ -30,7 +30,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, assign) BOOL showCloseBtn;
 
-
+/**
+ 获取广告平台
+ */
+@property (nonatomic, assign, readonly) MSPlatform platform;
 /**
  *  构造方法
  *  详解：frame - banner 展示的位置和大小

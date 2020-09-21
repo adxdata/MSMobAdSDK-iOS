@@ -28,8 +28,6 @@
  */
 
 - (void)msSplashPresent:(MSSplashAd *)splashAd;
-
-
 /**
  *  开屏广告成功展示
  */

@@ -33,7 +33,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** 广告展示时间 */
 @property (nonatomic, assign) NSInteger showTime;
-
+/**
+ 获取广告平台
+ */
+@property (nonatomic, assign, readonly) MSPlatform platform;
 //加载并显示
 - (void) loadAndShowSplashAd:(NSString *)pid;
 

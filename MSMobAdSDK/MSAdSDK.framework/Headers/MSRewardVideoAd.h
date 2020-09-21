@@ -14,7 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MSRewardVideoAd : MSBaseAd
 
 @property (nonatomic, weak) id <MSRewardVideoAdDelegate> delegate;
-
+/**
+ 获取广告平台
+ */
+@property (nonatomic, assign, readonly) MSPlatform platform;
 - (instancetype)initWithCurController:(nullable UIViewController *)controller;
 
 -(void) loadRewardVideoAd:(NSString*)pid;

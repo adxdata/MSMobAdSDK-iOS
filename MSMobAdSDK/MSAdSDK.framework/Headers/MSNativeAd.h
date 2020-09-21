@@ -29,7 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
  *  详解：开发者需传入用来弹出目标页的ViewController，一般为当前ViewController
  */
 @property (nonatomic, weak) UIViewController *viewController;
-
+/**
+ 获取广告平台
+ */
+@property (nonatomic, assign, readonly) MSPlatform platform;
 /**
  *  构造方法
  *  详解：appId - 媒体 ID

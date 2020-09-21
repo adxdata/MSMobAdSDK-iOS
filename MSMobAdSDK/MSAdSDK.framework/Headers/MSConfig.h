@@ -15,6 +15,9 @@
 
 + (MSGender)getGender;
 
+//
++(NSString*) genderStr;
+
 /**
  4 位数字出生年
  */
@@ -28,5 +31,7 @@
 + (void)setKeywords:(NSString *)keywords;
 
 + (NSString *)getKeywords;
+
++ (NSArray <NSString*>*)getKeywordArray;
 
 @end
