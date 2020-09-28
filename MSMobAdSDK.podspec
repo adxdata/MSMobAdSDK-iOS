@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'MSMobAdSDK'
-  s.version     = '1.0.0.9'
+  s.version     = '1.0.0.10'
   s.summary     = 'Mobile AD SDK For iOS.'
   s.homepage    = 'https://github.com/adxdata/MSMobAdSDK-iOS'
   s.license     = 'MIT'
@@ -24,16 +24,16 @@ Pod::Spec.new do |s|
     sp.vendored_frameworks  = 'BaiduMobAdSDK/BaiduMobAdSDK.framework'
     sp.resources            = 'BaiduMobAdSDK/baidumobadsdk.bundle'
 
-    sp.dependency 'MSMobAdSDK/MS'
+    sp.dependency "#{s.name}/MS"
   end
 
   s.subspec 'CSJ' do |sp|
-    sp.dependency 'MSMobAdSDK/MS'
+    sp.dependency "#{s.name}/MS"
     sp.dependency 'Bytedance-UnionAD', '~> 3.2.0'
   end
 
   s.subspec 'GDT' do |sp|
-    sp.dependency 'MSMobAdSDK/MS'
+    sp.dependency "#{s.name}/MS"
     sp.dependency 'GDTMobSDK', '4.11.10'
   end
 
