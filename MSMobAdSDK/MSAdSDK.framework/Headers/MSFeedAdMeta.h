@@ -41,6 +41,8 @@ typedef NS_ENUM(NSInteger, MSCreativeType) {
 
 - (NSInteger) metaTargetType;//广告交互类型(0:网页跳转,1:下载) 默认 值:0
 
+- (NSString *)metaFromId;
+
 #pragma mark- Action
 
 //绑定数据到View
