@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,weak) id<MSSplashAdDelegate> delegate;
 /**
  * 自定义底部视图
+ * 提示：如果需要再次设置bottomView的frame
+ * 建议在收到- (void)msSplashLoaded:(MSSplashAd *)splashAd回调中设置
  */
 @property(nonatomic,strong) UIView *bottomView;
  /** 自定义跳过控件 */
@@ -28,6 +30,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign,getter=isAdShow) BOOL adShow;
 /** 广告展示时间 */
 @property(nonatomic,assign) NSInteger showTime;
+/**
+ 开屏图片或者视频素材尺寸
+ 提示：
+ 1、splashSize只有在收到- (void)msSplashLoaded:(MSSplashAd *)splashAd
+ 回调后才能取到真实的size
+ 2、width & height 代表像素值
+ */
+@property(nonatomic,assign) CGSize splashSize;
 /**
  获取广告平台
  */
