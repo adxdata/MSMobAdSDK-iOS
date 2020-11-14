@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  广告发起请求方法
  *  详解：[必选]发起拉取广告请求,在获得广告数据后回调delegate
- *  @param adCount 一次拉取广告的个数，目前仅应用于穿山甲，美数一次只能取一个，百度每次只能取3个
+ *  @param adCount 一次拉取广告的个数，目前仅应用于穿山甲，MS一次只能取一个，百度每次只能取3个
  *  @param pid 广告id
  */
 - (void)loadAd:(int)adCount pid:(NSString *)pid;

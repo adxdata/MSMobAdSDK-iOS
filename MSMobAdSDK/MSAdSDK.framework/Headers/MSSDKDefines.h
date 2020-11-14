@@ -14,7 +14,7 @@
  广告平台
  */
 typedef NS_ENUM(NSInteger, MSPlatform) {
-    MSPlatformMS  = 0, // 展示美数
+    MSPlatformMS  = 0, // 展示MS
     MSPlatformGDT = 1, // 展示广点通
     MSPlatformBU  = 2, // 展示穿山甲
     MSPlatformBD  = 3, // 展示百度

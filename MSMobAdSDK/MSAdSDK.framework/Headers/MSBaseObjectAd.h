@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** 广告类型 */
 @property (assign, nonatomic)MSAdType adType;
 /*
- * 访问美数服务器，加载广告数据
+ * 访问MS服务器，加载广告数据
  */
 - (void)loadAd:(NSString *)pid;
 

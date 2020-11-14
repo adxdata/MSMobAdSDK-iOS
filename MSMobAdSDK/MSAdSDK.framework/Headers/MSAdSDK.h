@@ -10,7 +10,7 @@
 
 @interface MSAdSDK : NSObject
 
-//美数SDK入口 设置美数AppID
+//MSSDK入口 设置MSAppID
 + (void)setAppId:(NSString *)appId;
 
 //打开测试模式
@@ -19,10 +19,10 @@
 //日志打印
 +(void) setLogLevel:(MSLogLevel) level;
 
-//美数VersionName
+//MS VersionName
 + (NSString *) getVersionName;
 
-//美数VersionCode
+//MS VersionCode
 + (NSInteger)  getVersionCode;
 
 //获取平台版本号
